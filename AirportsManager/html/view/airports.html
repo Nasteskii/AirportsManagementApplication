@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Airports</title>
+    <link rel="stylesheet" href="../../css/airportsStyle.css">
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="airports.html">Airports</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li class="login-item"><a href="../login/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="search-box">
+        <label for="airportWithMostPassengersByCountry">Airport with most passengers by country:</label>
+        <input id="airportWithMostPassengersByCountry" type="text" placeholder="Enter Country"/>
+        <button id="most-passengers-search-btn">Search</button>
+    </div>
+    <h1 class="page-title">All Airports</h1>
+    <a href="../add/addAirportForm.html"><button class="btn-add">Add new airport</button></a>
+    <div id="all-airports" class="airport-list"></div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="../../js/view/airportsList.js"></script>
+</body>
+</html>

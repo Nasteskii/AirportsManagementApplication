@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Flights</title>
+    <link rel="stylesheet" href="../../css/flightsStyle.css">
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="airports.html">Airports</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li class="login-item"><a href="../login/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="search-box">
+        <label for="flightsFromAirport">Flights from airport:</label>
+        <input id="flightsFromAirport" type="text" placeholder="Enter Airport Code"/>
+        <button id="flights-from-search-btn">Search</button>
+    </div>
+    <div class="search-box">
+        <label for="flightsToAirport">Flights to airport:</label>
+        <input id="flightsToAirport" type="text" placeholder="Enter Airport Code"/>
+        <button id="flights-to-search-btn">Search</button>
+    </div>
+    <div class="search-box">
+        <label for="flightsFromA">Flights from airport A to airport B:</label>
+        <input id="flightsFromA" type="text" placeholder="Enter Airport Code"/>
+        <input id="flightsToB" type="text" placeholder="Enter Airport Code"/>
+        <button id="flights-fromAtoB-search-btn">Search</button>
+    </div>
+    <h1 class="page-title">All Flights</h1>
+    <a href="../add/addFlightForm.html"><button class="btn-add">Add new flight</button></a>
+    <div id="all-flights" class="flight-list"></div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="../../js/view/flightsList.js"></script>
+</body>
+</html>

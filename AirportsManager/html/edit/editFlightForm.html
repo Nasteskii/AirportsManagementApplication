@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Edit Flight</title>
+    <link rel="stylesheet" href="../../css/editFlightStyle.css">
+</head>
+<body>
+<div class="edit-flight-body">
+    <h1 class="form-title">Edit flight</h1>
+    <form id="edit-flight-form">
+        <input id="flightId" name="id" type="number" hidden>
+        <label for="codeFrom">From</label>
+        <input id="codeFrom" name="from" type="text">
+        <label for="codeTo">To</label>
+        <input id="codeTo" name="to" type="text">
+        <label for="departureTime">Departure Time In Minutes Since Midnight</label>
+        <input id="departureTime" name="departureTimeInMinutesSinceMidnight" type="number">
+        <label for="duration">Duration In Minutes</label>
+        <input id="duration" name="durationInMinutes" type="number">
+        <button type="submit">Edit flight</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="../../js/edit/editFlight.js"></script>
+</body>
+</html>
