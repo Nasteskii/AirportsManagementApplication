@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Add Flight</title>
+    <link rel="stylesheet" href="../../css/addFlightStyle.css">
+</head>
+<body>
+<div class="add-flight-body">
+    <h1 class="form-title">Add flight</h1>
+    <form id="add-flight-form">
+        <label for="codeFrom">From</label>
+        <input id="codeFrom" name="from" type="text">
+        <label for="codeTo">To</label>
+        <input id="codeTo" name="to" type="text">
+        <label for="departureTime">Departure Time In Minutes Since Midnight</label>
+        <input id="departureTime" name="departureTimeInMinutesSinceMidnight" type="number">
+        <label for="duration">Duration In Minutes</label>
+        <input id="duration" name="durationInMinutes" type="number">
+        <button type="submit">Add flight</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="../../js/add/addFlight.js"></script>
+</body>
+</html>
