@@ -29,7 +29,9 @@ public class LoadingData {
         String line = "";
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src/main/resources/static/airports.csv"));
+//            Used when reading from data in static directory
+//            BufferedReader br = new BufferedReader(new FileReader("src/main/resources/static/airports.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("/app/data/airports.csv"));
             br.readLine();
             while ((line = br.readLine()) != null) {
                 String[] airport = line.split(";");
@@ -40,7 +42,9 @@ public class LoadingData {
         }
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src/main/resources/static/flights.csv"));
+//            Used when reading from data in static directory
+//            BufferedReader br = new BufferedReader(new FileReader("src/main/resources/static/flights.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("/app/data/flights.csv"));
             br.readLine();
             while ((line = br.readLine()) != null) {
                 String[] flight = line.split(";");

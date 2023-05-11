@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@CrossOrigin("http://localhost:63342")
+@CrossOrigin("http://localhost:3000")
 @RequestMapping("/api/flights")
 public class FlightRestController {
     private final FlightService flightService;

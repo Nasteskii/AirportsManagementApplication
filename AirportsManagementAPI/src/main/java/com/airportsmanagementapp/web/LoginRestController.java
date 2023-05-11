@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @RestController
-@CrossOrigin("http://localhost:63342")
+@CrossOrigin("http://localhost:3000")
 @RequestMapping("/api/login")
 public class LoginRestController {
 
