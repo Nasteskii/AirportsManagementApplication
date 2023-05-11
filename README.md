@@ -1,2 +1,2 @@
 # AirportsManagementApplication
-Change branch if you don't see code
+Simple web application for managing airports and flights.
